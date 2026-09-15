@@ -53,7 +53,7 @@ export default function App() {
       } else {
         setMessage(`Error: ${data.detail || 'Upload failed'}`);
       }
-    } catch (error) {
+    } catch {
       setMessage('Network error. Make sure the backend server is running.');
     } finally {
       setIsUploading(false);
